@@ -85,7 +85,6 @@ const earthMaterial = new THREE.MeshPhongMaterial({
 });
 const earth = new THREE.Mesh(sphereGeometry, earthMaterial);
 earthOrbit.add(earth);
-objects.push(earth);
 
 //objecte buid que rotarà la lluna i els seus fulls ( si en tengués )
 const moonOrbit = new THREE.Object3D();
@@ -101,10 +100,6 @@ const moonMaterial = new THREE.MeshPhongMaterial({
 const moon = new THREE.Mesh(sphereGeometry, moonMaterial);
 moon.scale.set(0.5, 0.5, 0.5);
 moonOrbit.add(moon);
-objects.push(moon);
-
-
-
 
 //objecte buid que contindrà la calavera i els seus satelits
 const skullOrbit = new THREE.Object3D();
